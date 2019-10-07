@@ -1,0 +1,16 @@
+<mat-card class="to-do-card">
+        <mat-card-header>
+          <mat-card-title>Your todo list for the day..</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+         
+          <mat-form-field>
+              <input matInput placeholder="What`s on your mind?" [formControl]='taskFormControl' />
+          </mat-form-field> &nbsp;
+          <button mat-raised-button color="primary" (click) = 'addTask();' [disabled]="!taskFormControl.value">Add</button>
+      
+          <div *ngFor="let t of taskList">
+              <mat-checkbox  (change)="updateTask(t)" [ngClass]="{'completed': t.isCompleted}" >{{t.taskDescription}}</mat-checkbox>   
+            </div>
+        </mat-card-content>
+      </mat-card>

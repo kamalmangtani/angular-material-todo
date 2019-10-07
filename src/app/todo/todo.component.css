@@ -1,0 +1,16 @@
+.to-do-card-input {
+    width: 300px;
+}
+
+.completed {
+    text-decoration:line-through
+}
+.to-do-card {
+    max-width: 300px;
+}
+
+.todo-header-image{
+    background-image: url('/assets/download.png');
+    background-size: cover;
+}
+
