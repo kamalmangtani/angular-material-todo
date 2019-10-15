@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Todo } from 'src/models/todo';
 import { FormControl } from '@angular/forms';
 
+
 @Component({
   selector: 'app-todo',
   templateUrl: './todo.component.html',
@@ -9,9 +10,9 @@ import { FormControl } from '@angular/forms';
 })
 export class TodoComponent implements OnInit {
 
-  constructor() { }
-
+  
   ngOnInit() {
+    
   }
   
   taskList : Todo[] = [];

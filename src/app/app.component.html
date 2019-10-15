@@ -1,7 +1,15 @@
 <mat-toolbar color="primary">
   <mat-toolbar-row>
     <span>Angular Material - TODO App</span>
+    <span class="app-spacer"></span>
+    <button (click)="auth.login()" *ngIf="!auth.loggedIn" mat-icon-button color="basic" aria-label="Login">
+      <mat-icon>account_circle</mat-icon> Login
+    </button>
+    <app-profile *ngIf="auth.loggedIn"></app-profile>
   </mat-toolbar-row>
 </mat-toolbar>
 <br/>
-<app-todo></app-todo>
+ <router-outlet></router-outlet>
+<app-todo *ngIf="auth.loggedIn"></app-todo>
+
+

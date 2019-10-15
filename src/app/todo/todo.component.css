@@ -1,12 +1,12 @@
 .to-do-card-input {
-    width: 300px;
+    width: 350px;
 }
 
 .completed {
     text-decoration:line-through
 }
 .to-do-card {
-    max-width: 300px;
+    max-width: 325px;
 }
 
 .todo-header-image{

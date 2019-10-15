@@ -1,0 +1,3 @@
+<button (click)="auth.logout()" *ngIf="auth.userProfile$ | async as profile" mat-icon-button color="basic" aria-label="Login">
+    <mat-icon>account_circle</mat-icon> {{profile.given_name}}
+</button>
